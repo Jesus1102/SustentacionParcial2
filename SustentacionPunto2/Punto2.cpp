@@ -3,13 +3,11 @@
 #include <time.h>
 #include <random>
 using namespace std;
-//lista de frutas y comparar su posicion con el que ingresa el usuarioy si perdio o gano
 
-//adviniar un numero de 3 cifras
 class Frutas{
 
     public:
-    string frutas [5] = {"Manzana", "Pera", "Durazno", "Uvas", "Arandano"};
+    string frutas [5] = {"Manzana", "Pera", "Durazno", "Uvas", "Arandano"}; // define una array con frutas
 
     //Frutas();
 
@@ -28,7 +26,8 @@ class Frutas{
             if(indice == frutas[j]){
 
                 cout << "La fruta Ingresada esta en la posicion correcta" << endl;
-                cont ++;
+                cont ++; 
+                // si la fruta ingresada es igual a la posicion agrega uno al contador
             }
             else{
 
@@ -61,7 +60,7 @@ class Numero{
     int numeroAleatorio = 99+ rand()% 999;
     int numero, counter = 20;
 
-    //Numero();
+    //Numero(); para ejecutar el constructor nesecita parametros
     
     void jugar(){
 
