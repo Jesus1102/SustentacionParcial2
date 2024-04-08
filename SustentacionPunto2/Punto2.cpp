@@ -80,7 +80,7 @@ class Numero{
             }
             else if (numero < numeroAleatorio){
 
-                cout << "El numero ingresado es mayor que el numero a adivinar" << endl;
+                cout << "El numero ingresado es menor que el numero a adivinar" << endl;
             }
             else if(numero == numeroAleatorio){
 
