@@ -57,9 +57,11 @@ class Frutas{
 class Numero{
 
     public:
-    //srand (time(NULL));
+    //srand(time(NULL));
     int numeroAleatorio = 1000+ rand()% 9999;
     int numero, counter = 20;
+
+    Numero();
     
     void jugar(){
 

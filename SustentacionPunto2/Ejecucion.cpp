@@ -29,6 +29,7 @@ int main(){
         break;
     
     default:
+        cout << "Ingrese una opcion valida" << endl;
         break;
     }
     
