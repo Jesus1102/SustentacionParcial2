@@ -58,14 +58,14 @@ class Numero{
 
     public:
     //srand(time(NULL));
-    int numeroAleatorio = 1000+ rand()% 9999;
+    int numeroAleatorio = 99+ rand()% 999;
     int numero, counter = 20;
 
     //Numero();
     
     void jugar(){
 
-        cout << "Bienvenido, el objetivo del juego es advinar un numero de 3 cifras.(1000 hasta 9999)" << endl;
+        cout << "Bienvenido, el objetivo del juego es advinar un numero de 3 cifras.(100 hasta 999)" << endl;
 
         while(counter > 0){
 
