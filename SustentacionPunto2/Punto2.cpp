@@ -65,7 +65,7 @@ class Numero{
     
     void jugar(){
 
-        cout << "Bienvenido, el objetivo del juego es advinar un numero de 3 cifras." << endl;
+        cout << "Bienvenido, el objetivo del juego es advinar un numero de 3 cifras.(1000 hasta 9999)" << endl;
 
         while(counter < 20){
 
