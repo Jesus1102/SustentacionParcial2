@@ -59,7 +59,7 @@ class Numero{
     public:
     //srand(time(NULL));
     int numeroAleatorio = 1000+ rand()% 9999;
-    int numero, counter = 0;
+    int numero, counter = 20;
 
     //Numero();
     
@@ -67,7 +67,7 @@ class Numero{
 
         cout << "Bienvenido, el objetivo del juego es advinar un numero de 3 cifras.(1000 hasta 9999)" << endl;
 
-        while(counter < 20){
+        while(counter > 0){
 
             cout << "Tienes 20 intentos y te quedan: " << counter << endl;
             cout << "Ingrese el numero: " << endl;
@@ -89,7 +89,7 @@ class Numero{
                 break;
             }
 
-            counter++;
+            counter--;
 
         }
 
