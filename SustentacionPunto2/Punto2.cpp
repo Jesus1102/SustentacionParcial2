@@ -9,7 +9,7 @@ class Frutas{
     public:
     string frutas [5] = {"Manzana", "Pera", "Durazno", "Uvas", "Arandano"}; // define una array con frutas
 
-    //Frutas();
+    //Frutas(); para ejecutar el constructor nesecita parametros
 
     void busqueda(){
         string indice;
@@ -17,7 +17,7 @@ class Frutas{
 
         cout << "Bienvenido, para ganar tienes que adivinar la fruta en el indice correcto" << endl;
 
-        while (j < frutas->length()){
+        while (j < frutas->length()){ // compara el contador con la longitud del array
             
             cout << "Ingrese la fruta(Con la primera letra en mayuscula): " << endl;
             cin >> indice;
@@ -56,7 +56,7 @@ class Frutas{
 class Numero{
 
     public:
-    //srand(time(NULL));
+
     int numeroAleatorio = 99+ rand()% 999;
     int numero, counter = 20;
 
@@ -66,13 +66,13 @@ class Numero{
 
         cout << "Bienvenido, el objetivo del juego es advinar un numero de 3 cifras.(100 hasta 999)" << endl;
 
-        while(counter > 0){
+        while(counter > 0){ // mientrsa counter sea menor a 20 se ejecuta
 
             cout << "Tienes 20 intentos y te quedan: " << counter << endl;
             cout << "Ingrese el numero: " << endl;
             cin >> numero;
 
-            if(numero > numeroAleatorio){
+            if(numero > numeroAleatorio){ // compara el num ingresado con el aletorio
 
                 cout << "El numero ingresado es mayor que el numero a adivinar" << endl;
 
@@ -81,7 +81,7 @@ class Numero{
 
                 cout << "El numero ingresado es menor que el numero a adivinar" << endl;
             }
-            else if(numero == numeroAleatorio){
+            else if(numero == numeroAleatorio){ // si es igual se avisa al usuario y se sale
 
                 cout << "El numero ingresado es igual al numero a adivinar" << endl;
                 cout << "Has ganado. Felicitaciones" << endl;
@@ -92,7 +92,7 @@ class Numero{
 
         }
 
-        if(counter == 20){
+        if(counter == 0){ // si counter llega a 0 se sale
 
             cout << "Has perdido. Lo Sentimos" << endl;
         
