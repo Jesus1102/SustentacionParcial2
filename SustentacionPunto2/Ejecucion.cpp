@@ -14,8 +14,24 @@ int main(){
 
     Frutas user;
     Numero user1;
+    int opcion;
+    cout << "Bienvenido" << endl << "Que juego desea jugar?" << endl << "1. Lista de frutas /2. Adivinar el numero" << endl;
+    cin >> opcion;
 
-    //user.busqueda();
-    user1.jugar();
+    switch (opcion)
+    {
+    case 1:
+        user.busqueda();
+        break;
+    
+    case 2:
+        user1.jugar();
+        break;
+    
+    default:
+        break;
+    }
+    
+    return 0;
 
 }
