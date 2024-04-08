@@ -11,7 +11,7 @@ class Frutas{
     public:
     string frutas [5] = {"Manzana", "Pera", "Durazno", "Uvas", "Arandano"};
 
-    Frutas();
+    //Frutas();
 
     void busqueda(){
         string indice;
@@ -59,9 +59,9 @@ class Numero{
     public:
     //srand(time(NULL));
     int numeroAleatorio = 1000+ rand()% 9999;
-    int numero, counter = 20;
+    int numero, counter = 0;
 
-    Numero();
+    //Numero();
     
     void jugar(){
 
