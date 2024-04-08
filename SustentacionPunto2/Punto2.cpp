@@ -1,6 +1,5 @@
 #include <iostream>
 #include <list>
-#include <time.h>
 #include <random>
 using namespace std;
 
@@ -17,7 +16,7 @@ class Frutas{
 
         cout << "Bienvenido, para ganar tienes que adivinar la fruta en el indice correcto" << endl;
 
-        while (j < frutas->length()){ // compara el contador con la longitud del array
+        while (j < 5){ // compara el contador con la longitud del array
             
             cout << "Ingrese la fruta(Con la primera letra en mayuscula): " << endl;
             cin >> indice;
